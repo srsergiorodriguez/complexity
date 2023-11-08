@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logisitc Map</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+    <script src="sketch.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+
+    <style> 
+      body {
+        padding:0; 
+        margin:0;}
+
+      h1 {
+        font-family: 'Open Sans', sans-serif;
+        text-align:center;
+        font-size:25px;
+      }
+
+      p {
+        font-family: 'Open Sans', sans-serif;
+        font-size:14px;
+      }
+
+      #general {
+        width:500px;
+        border:solid 1px;
+        margin:auto;
+        padding:10px;
+        border-radius:5px;
+      }
+
+      #canvas_container {
+        border:solid 1px;
+      }
+
+      .slider_opt {
+        box-shadow:none;
+        -webkit-appearance: none;
+        -moz-appearance:none;
+        appearance: none;
+        width:500px;
+        color:#111111;
+        background:#111111;
+        height:2px;
+      }
+
+      .slider_opt:focus {
+        outline:none;
+      }
+
+      .slider_opt::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width:20px;
+        height:20px;
+        border-radius:5px;
+        border:solid 2px #111111;
+        background:white;
+        cursor:pointer;
+      }
+
+      .slider_opt::-webkit-slider-thumb:hover {
+        background:#111111;
+      }
+
+      select {
+        font-family:'Open Sans';
+        font-size:16px;
+        color:#111111;
+        background:white;
+        border-radius:0px;
+        box-shadow:none;
+        border:solid 1px;
+        margin:5px 0px;
+      }
+
+      select:focus {
+        outline:none;
+      }
+
+      button {
+        font-family:'Open Sans';
+        font-size:16px;
+        color:#111111;
+        background:white;
+        box-shadow:none;
+        border:solid 1px;
+        border-radius:5px;
+        margin:5px 0px;
+      }
+
+      button:hover {
+        color:white;
+        background:#111111;
+      }
+
+      button:active {
+        background:#666666;
+      }
+
+      button:focus {
+        outline:none;
+      }
+
+      footer {
+        box-sizing: border-box;
+        margin:0px 0px;
+        text-align:center;
+      }
+
+      footer a {
+        font-family:'Open Sans';
+        font-size:10px;
+      }
+
+      footer p {
+        font-size:10px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id='general'>
+      <header>
+        <h1>Logistic map => Xn+1 = R*Xn*(1-Xn)</h1>
+      </header>
+      <div id='controls_container'></div>
+      <div id='canvas_container'></div>
+    </div>
+    <footer>
+      <p>Por Sergio Rodríguez Gómez — 2020</p>
+    </footer>
+  </body>
+</html>
